@@ -65,4 +65,22 @@ img {
   position: absolute;
   margin: 24.6vh 0 0 9.4vw;
 }
+
+.btn {
+  margin: 26vh 0 0 15vw;
+  font-size: x-large;
+  height: 5vh;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+
+.input {
+  font-size: x-large;
+  position: absolute;
+  width: 35vw;
+  margin: 26vh 0 0 27.4vw;
+}
 /*# sourceMappingURL=style.css.map */
