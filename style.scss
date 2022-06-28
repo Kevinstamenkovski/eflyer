@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    
+}
+a:hover{
+    border-radius: 5px;
+    background-color: #00ff00;
+    color: black;
+}
+body{
+    background: linear-gradient(90deg, #a08907, #ffff00, #a08907);
+    width: 100vw;
+    height: 100vh;
+}
+img{
+    z-index: -1;
+    width: 100vw;
+    opacity: 100%;
+}
+.header{
+    
+    margin-left: 10vw;
+    position: absolute;
+    background: #000;
+    width: 80vw;
+    height: 10vh;
+    transform: perspective(12px) rotateX(-0.5deg);
+    ul{
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        color: #fff;
+    }
+}
+.hamburger-dropdown{
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+.icon{
+    position: absolute;
+    margin: 24.6vh 0 0 9.4vw;
+}
