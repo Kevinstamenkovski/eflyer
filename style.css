@@ -1,3 +1,8 @@
+:root {
+  --dark-color1: #1a1a1a;
+  --light-color1: #fff;
+}
+
 * {
   margin: 0;
   cursor: default;
@@ -10,9 +15,7 @@ a {
 }
 
 a:hover {
-  border-radius: 5px;
-  background-color: #00ff00;
-  color: black;
+  color: lightsalmon;
 }
 
 body {
@@ -23,7 +26,7 @@ body {
 }
 
 img {
-  z-index: 1;
+  z-index: -1;
   width: 100vw;
   opacity: 100%;
 }
@@ -31,7 +34,7 @@ img {
 .header {
   margin-left: 10vw;
   position: absolute;
-  background: #000;
+  background: var(--dark-color1);
   width: 80vw;
   height: 10vh;
   -webkit-transform: perspective(12px) rotateX(-0.5deg);
@@ -50,13 +53,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  color: #fff;
+  color: var(--light-color1);
 }
 
 .hamburger-dropdown {
   width: 50px;
   height: 10px;
-  background-color: white;
+  background-color: var(--light-color1);
   margin: 6px 0;
   border-radius: 5px;
 }
@@ -73,8 +76,12 @@ img {
   cursor: pointer;
   position: absolute;
   border-radius: 4px;
-  background: #000;
+  background: var(--dark-color1);
   color: #fff;
+}
+
+.btn * {
+  cursor: pointer;
 }
 
 .input {
@@ -82,5 +89,141 @@ img {
   position: absolute;
   width: 35vw;
   margin: 26vh 0 0 27.4vw;
+}
+
+.searchBox {
+  cursor: pointer;
+  color: var(--light-color1);
+  margin: 26vh 0 0 62.9vw;
+  height: 4.5vh;
+  width: 4.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-large;
+  position: absolute;
+  background-color: #ffa500;
+}
+
+.searchBox i {
+  cursor: pointer;
+}
+
+.e-title {
+  color: var(--light-color1);
+  position: absolute;
+  margin: 13vh 0 0 46vw;
+  font-size: x-large;
+  letter-spacing: .2vw;
+}
+
+.langBtn {
+  color: var(--light-color1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  margin: 26.5vh 0 0 66vw;
+}
+
+.langBtn * {
+  cursor: pointer;
+}
+
+.langBtn button {
+  background: var(--light-color1);
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+}
+
+.footer {
+  margin: 100vh 0 0 0;
+  box-shadow: -2px -64px 81px 53px white;
+  -webkit-box-shadow: -2px -64px 81px 53px white;
+  -moz-box-shadow: -2px -64px 81px 53px white;
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  background: var(--light-color1);
+  text-align: center;
+  letter-spacing: 3.5px;
+  word-spacing: 4px;
+  font-size: x-large;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .card {
+  box-shadow: -1px 0px 30px 7px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: -1px 0px 30px 7px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: -1px 0px 30px 7px rgba(0, 0, 0, 0.65);
+  width: 25vw;
+  height: 40vh;
+}
+
+.container .card h3:before {
+  color: #ffa500;
+  content: "Price:  ";
+}
+
+.main-txt {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 45vh 0 0 0;
+  width: 100vw;
+  font-size: x-large;
+}
+
+.main-txt * {
+  text-align: center;
+  color: var(--light-color1);
+}
+
+.main-txt h1 {
+  letter-spacing: 5px;
+  word-spacing: 7.5px;
+}
+
+.main-txt button {
+  margin-top: 10vh;
+  font-weight: bold;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 15vw;
+  height: 8vh;
+  cursor: pointer;
+  font-size: larger;
+  background: #000;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
